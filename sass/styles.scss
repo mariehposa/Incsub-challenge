@@ -1,9 +1,15 @@
+@use 'base';
+
 body{
     width: 100%;
     display: flex;
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 13px;
 
     .first-section {
         width: 65%;
+        background: #f8f8f8;
         
         .heading {
             font-size: 25px;
@@ -13,10 +19,13 @@ body{
 
         .info-one {
             display: flex;
+            margin-bottom: 15px;
     
             a {
-                margin-top: 16px;
-                margin-left: 5px;
+                margin-top: 13px;
+                margin-left: 7px;
+                font-weight: 600;
+                color: #4242f2;
             }
         }
     
@@ -24,20 +33,34 @@ body{
             display: flex;
             flex-direction: column;
             width: 40%;
+            margin: 20px 0;
     
             input, select, button {
-                padding: 7px;
+                padding: 10px;
                 margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ececec;
+            }
+
+            ::placeholder {
+                color: #767676;
+                opacity: .9;
+                font-size: 13px;
+                background: #f8f8f8;
             }
     
             select {
-                appearance: none;
                 &:invalid {
                     color: gray;
                   }
                   [disabled] {
                     color: gray;
                   }
+            }
+
+            button {
+                opacity: .3;
+                font-weight: 600;
             }
         }
     
