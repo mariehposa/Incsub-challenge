@@ -1,4 +1,35 @@
-p {
-  color: red; }
+body {
+  width: 100%;
+  display: flex; }
+  body .first-section {
+    width: 65%; }
+    body .first-section .heading {
+      font-size: 25px;
+      color: #1d1d1d;
+      font-weight: 600; }
+    body .first-section .info-one {
+      display: flex; }
+      body .first-section .info-one a {
+        margin-top: 16px;
+        margin-left: 5px; }
+    body .first-section form {
+      display: flex;
+      flex-direction: column;
+      width: 40%; }
+      body .first-section form input, body .first-section form select, body .first-section form button {
+        padding: 7px;
+        margin: 10px 0; }
+      body .first-section form select {
+        appearance: none; }
+        body .first-section form select:invalid {
+          color: gray; }
+        body .first-section form select [disabled] {
+          color: gray; }
+    body .first-section .info-two {
+      width: 40%; }
+    body .first-section a, body .first-section span {
+      color: #4242f2; }
+  body .second-section {
+    width: 35%; }
 
 /*# sourceMappingURL=styles.css.map */
