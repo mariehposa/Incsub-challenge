@@ -81,6 +81,11 @@ body {
           opacity: .3;
           font-weight: 600;
           cursor: pointer; }
+        body .first-section .coverall form #error-email, body .first-section .coverall form #error-password {
+          visibility: collapse;
+          margin: 0;
+          color: red;
+          font-size: 13px; }
       body .first-section .coverall .info-two {
         width: 80%; }
         body .first-section .coverall .info-two p, body .first-section .coverall .info-two span {
@@ -127,9 +132,5 @@ body {
         height: 20rem;
         width: 100%;
         top: -1px; } }
-
-#error-email, #error-password {
-  visibility: collapse;
-  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

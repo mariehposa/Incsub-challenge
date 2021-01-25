@@ -125,6 +125,13 @@ body{
                     font-weight: 600;
                     cursor: pointer;
                 }
+
+                #error-email, #error-password {
+                    visibility: collapse;
+                    margin: 0;
+                    color: red;
+                    font-size: 13px;
+                }
             }
         
             .info-two {
@@ -201,9 +208,4 @@ body{
             top: -1px;
         }
     }
-}
-
-#error-email, #error-password {
-    visibility: collapse;
-    margin: 0;
 }
