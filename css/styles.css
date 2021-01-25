@@ -40,7 +40,10 @@ body {
           padding: 10px;
           margin: 10px 0;
           border-radius: 3px;
-          border: 1px solid #ececec; }
+          border: 1px solid #ececec;
+          background: #f8f8f8; }
+          body .first-section .coverall form input.active, body .first-section .coverall form select.active, body .first-section .coverall form button.active {
+            border: none; }
         body .first-section .coverall form ::placeholder {
           color: #767676;
           opacity: .9;
@@ -50,7 +53,6 @@ body {
           overflow: hidden;
           overflow: -moz-hidden-unscrollable;
           background: url(../img/expandarrow.png) no-repeat right white;
-          background-position-x: 360px;
           background-color: #f8f8f8; }
           body .first-section .coverall form .select-div select {
             -moz-appearance: none;
@@ -66,13 +68,15 @@ body {
           width: 100%;
           display: flex; }
           body .first-section .coverall form .password-div input {
-            width: 100%; }
+            width: 100%;
+            border-right: none; }
           body .first-section .coverall form .password-div i {
-            position: absolute;
+            border: 1px solid #ececec;
             cursor: pointer;
-            right: 0;
-            margin-right: 109px;
-            margin-top: 23px; }
+            height: 24px;
+            border-left: none;
+            padding-top: 12px;
+            margin-top: 10px; }
         body .first-section .coverall form button {
           opacity: .3;
           font-weight: 600;
@@ -100,6 +104,14 @@ body {
         margin-bottom: 60px; }
       body .second-section div p {
         line-height: 25px; }
+  @media (max-width: 1200px) {
+    body .first-section .coverall {
+      width: 80%;
+      left: 20%; }
+    body .second-section div {
+      width: 80%;
+      left: 13%;
+      top: 20%; } }
 
 #error-email, #error-password {
   visibility: collapse;
