@@ -35,7 +35,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 20px 0; }
+        margin: 10px 0; }
         body .first-section .coverall form input, body .first-section .coverall form select, body .first-section .coverall form button {
           padding: 10px;
           margin: 10px 0;
@@ -46,10 +46,33 @@ body {
           opacity: .9;
           font-size: 13px;
           background: #f8f8f8; }
-        body .first-section .coverall form select:invalid {
-          color: gray; }
-        body .first-section .coverall form select [disabled] {
-          color: gray; }
+        body .first-section .coverall form .select-div {
+          overflow: hidden;
+          overflow: -moz-hidden-unscrollable;
+          background: url(../img/expandarrow.png) no-repeat right white;
+          background-position-x: 360px;
+          background-color: #f8f8f8; }
+          body .first-section .coverall form .select-div select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            -webkit-appearance: none;
+            color: gray;
+            width: 100%; }
+            body .first-section .coverall form .select-div select .option {
+              color: #333; }
+        body .first-section .coverall form .password-div {
+          width: 100%;
+          display: flex; }
+          body .first-section .coverall form .password-div input {
+            width: 100%; }
+          body .first-section .coverall form .password-div i {
+            position: absolute;
+            cursor: pointer;
+            right: 0;
+            margin-right: 109px;
+            margin-top: 23px; }
         body .first-section .coverall form button {
           opacity: .3;
           font-weight: 600;
@@ -79,10 +102,7 @@ body {
         line-height: 25px; }
 
 #error-email, #error-password {
-  visibility: collapse; }
-
-i {
-  margin-left: -30px;
-  cursor: pointer; }
+  visibility: collapse;
+  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

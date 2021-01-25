@@ -25,12 +25,16 @@
                 <input type="text" name="name" placeholder="Your name" />
                 <input type="email" name="email" placeholder="Email address" />
                 <p id="error-email">Please enter valid email</p>
-                <select>
-                    <option disabled selected value="">I would describe my user type as</option>
-                    <option value="admin">Developer</option>
-                </select>
-                <input type="password" name="password" placeholder="Password" />
-                <i class="fas fa-eye" id="togglePassword"></i>
+                <div class="select-div">
+                    <select>
+                        <option disabled selected hidden value="">I would describe my user type as</option>
+                        <option value="admin" class="option">Developer</option>
+                    </select>
+                </div>
+                <div class="password-div">
+                    <input type="password" name="password" placeholder="Password" />
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                </div>
                 <p id="error-password">Minimum of 8 characters</p>
                 <button type="submit">Next</button>
             </form>
