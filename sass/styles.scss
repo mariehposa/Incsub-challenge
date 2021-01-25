@@ -1,5 +1,10 @@
 @use 'base';
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body{
     width: 100%;
     display: flex;
@@ -10,70 +15,80 @@ body{
     .first-section {
         width: 65%;
         background: #f8f8f8;
+        height: 100%;
         
-        .heading {
-            font-size: 25px;
-            color: rgb(29, 29, 29);
-            font-weight: 600;
-        }
-
-        .info-one {
-            display: flex;
-            margin-bottom: 15px;
-    
-            a {
-                margin-top: 14px;
-                margin-left: 7px;
+        .coverall {
+            position: relative;
+            right: 50%;
+            left: 25%;
+            top: 10%;
+            // bottom: 50%;
+            width: 55%;
+        
+            .heading {
+                font-size: 25px;
+                color: rgb(29, 29, 29);
                 font-weight: 600;
+            }
+
+            .info-one {
+                display: flex;
+                margin-bottom: 15px;
+        
+                a {
+                    margin-top: 14px;
+                    margin-left: 7px;
+                    font-weight: 600;
+                    color: #4242f2;
+                }
+            }
+        
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 20px 0;
+        
+                input, select, button {
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 3px;
+                    border: 1px solid #ececec;
+                }
+
+                ::placeholder {
+                    color: #767676;
+                    opacity: .9;
+                    font-size: 13px;
+                    background: #f8f8f8;
+                }
+        
+                select {
+                    &:invalid {
+                        color: gray;
+                    }
+                    [disabled] {
+                        color: gray;
+                    }
+                }
+
+                button {
+                    opacity: .3;
+                    font-weight: 600;
+                }
+            }
+        
+            .info-two {
+                width: 80%;
+
+                p, span {
+                    line-height: 25px;
+                }
+            }
+
+            a, span {
                 color: #4242f2;
             }
-        }
-    
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 45%;
-            margin: 20px 0;
-    
-            input, select, button {
-                padding: 10px;
-                margin: 10px 0;
-                border-radius: 3px;
-                border: 1px solid #ececec;
-            }
-
-            ::placeholder {
-                color: #767676;
-                opacity: .9;
-                font-size: 13px;
-                background: #f8f8f8;
-            }
-    
-            select {
-                &:invalid {
-                    color: gray;
-                  }
-                  [disabled] {
-                    color: gray;
-                  }
-            }
-
-            button {
-                opacity: .3;
-                font-weight: 600;
-            }
-        }
-    
-        .info-two {
-            width: 45%;
-
-            p, span {
-                line-height: 25px;
-            }
-        }
-
-        a, span {
-            color: #4242f2;
         }
     }
     
@@ -81,15 +96,25 @@ body{
         width: 35%;
         background: #4242f2;
         color: #fff;
+        height: 100%;
 
-        p:first-child {
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 60px;
-        }
+        div {
+            position: relative;
+            right: 50%;
+            left: 25%;
+            top: 35%;
+            // bottom: 50%;
+            width: 55%;
 
-        p {
-            line-height: 25px;
+            p:first-child {
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 60px;
+            }
+
+            p {
+                line-height: 25px;
+            }
         }
     }
 }
