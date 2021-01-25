@@ -179,6 +179,28 @@ body{
             top: 20%;
         }
     }
+
+    @media (max-width: 550px) {
+        flex-direction: column-reverse;
+
+        .first-section {
+            position: absolute;
+            width: 100%;
+            top: 250px;
+
+            .coverall {
+                width: 83%;
+                left: 13%;
+            }
+        }
+
+        .second-section {
+            position: absolute;
+            height: 20rem;
+            width: 100%;
+            top: -1px;
+        }
+    }
 }
 
 #error-email, #error-password {

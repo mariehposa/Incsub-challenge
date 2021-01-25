@@ -112,6 +112,21 @@ body {
       width: 80%;
       left: 13%;
       top: 20%; } }
+  @media (max-width: 550px) {
+    body {
+      flex-direction: column-reverse; }
+      body .first-section {
+        position: absolute;
+        width: 100%;
+        top: 250px; }
+        body .first-section .coverall {
+          width: 83%;
+          left: 13%; }
+      body .second-section {
+        position: absolute;
+        height: 20rem;
+        width: 100%;
+        top: -1px; } }
 
 #error-email, #error-password {
   visibility: collapse;
