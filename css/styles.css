@@ -81,4 +81,8 @@ body {
 #error-email, #error-password {
   visibility: collapse; }
 
+i {
+  margin-left: -30px;
+  cursor: pointer; }
+
 /*# sourceMappingURL=styles.css.map */
