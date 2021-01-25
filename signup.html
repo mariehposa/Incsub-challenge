@@ -19,16 +19,20 @@
                     <a>Sign in</a>
                 </div>
             </div>
-            <form>
-                <input type="text" id="lname" name="lname" placeholder="Your name" required />
-                <input type="email" id="lname" name="lname" placeholder="Email address" />
+
+            <form name="signupForm" method="post" onsubmit="return validateForm()">
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="email" name="email" placeholder="Email address" />
+                <p id="error-email">Please enter valid email</p>
                 <select>
                     <option disabled selected value="">I would describe my user type as</option>
                     <option value="admin">Developer</option>
                 </select>
-                <input type="text" name="password" placeholder="Password" />
-                <button>Next</button>
+                <input type="password" name="password" placeholder="Password" />
+                <p id="error-password">Minimum of 8 characters</p>
+                <button type="submit">Next</button>
             </form>
+
             <div class="info-two">
                 <p>By clicking the "Next" button, you agree to creating a free account, and to <span>Terms of
                         Service</span>
@@ -45,6 +49,7 @@
                 magna aliqua.</p>
         </div>
     </div>
+    <script src="signup.js"></script>
 </body>
 
 </html>

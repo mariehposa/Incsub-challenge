@@ -1,27 +1,26 @@
-function validateEmail(email) {
+function validateForm() {
+  var email = document.forms["signupForm"]["email"].value;
+  var password = document.forms["signupForm"]["password"].value;
+  var is_valid = false;
+
   const validEmailRegex = RegExp(
     /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
   );
+  let validEmail = validEmailRegex.test(email);
 
-  if (!email) {
-    return "Email is required";
-  }
+  document.getElementById("error-email").style.visibility = "collapse";
+  document.getElementById("error-password").style.visibility = "collapse";
+  is_valid = true;
 
-  if (!validEmailRegex.test(email)) {
-    return "Please enter a valid email";
-  }
-
-  return "";
-}
-
-function validatePassword(password) {
-  if (!password) {
-    return "Password is required";
+  if (!validEmail) {
+    document.getElementById("error-email").style.visibility = "visible";
+    is_valid = false;
   }
 
   if (password.length < 8) {
-    return "Minimum 8 characters";
+    document.getElementById("error-password").style.visibility = "visible";
+    is_valid = false;
   }
 
-  return "";
+  return is_valid;
 }
