@@ -37,3 +37,8 @@ function validateForm() {
 
   return is_valid;
 }
+
+//function to trigger changes on focus
+function inputFocus(x) {
+  x.style.border = "1px solid red";
+}
