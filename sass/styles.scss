@@ -55,10 +55,14 @@ body{
                     border-radius: 3px;
                     border: 1px solid #ececec;
                     background: #f8f8f8;
+                }
 
-                    &.active {
-                        border: none;
-                    }
+                input[type=text]:focus{
+                    outline: 2px solid red;
+                }
+
+                input[type=email]:focus{
+                    outline: 2px solid red;
                 }
 
                 ::placeholder {
