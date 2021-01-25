@@ -13,3 +13,15 @@ function validateEmail(email) {
 
   return "";
 }
+
+function validatePassword(password) {
+  if (!password) {
+    return "Password is required";
+  }
+
+  if (password.length < 8) {
+    return "Minimum 8 characters";
+  }
+
+  return "";
+}
